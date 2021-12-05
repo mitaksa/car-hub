@@ -45,7 +45,7 @@ const Header = () => {
 
 						</li>
 
-						<button><span className="postnewcar">POST NEW CAR</span></button>
+						<button><Link to='/create-page' className="postnewcar">POST NEW CAR</Link></button>
 
 
 						<li><Link to="/login">Login </Link> </li>
