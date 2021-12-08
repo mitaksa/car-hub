@@ -5,7 +5,7 @@ const MyCars = () => {
     return (
         <div>
             <div className="feturedsection">
-                <h1 className="text-center"><span className="bdots">&bullet;</span>F E A T U R E S<span className="carstxt">C A R S</span>&bullet;</h1>
+                <h1 className="text-center">My Cars</h1>
             </div>
             <div className="feturedimage">
                 <div className="row firstrow">
