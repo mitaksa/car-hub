@@ -7,7 +7,7 @@ const Register = () => {
             <div class="logo"></div>
             <div class="login-block">
                 <h1>Register</h1>
-                <input type="text" defaultValue="" placeholder="Username" id="username" />
+                <input type="text" defaultValue="" placeholder="Username" id="email" />
                 <input type="password" defaultValue="" placeholder="Password" id="password" />
                 <input type="password" defaultValue="" placeholder="Repeat Password" id="password" />
                 <button>Register</button>

@@ -13,7 +13,7 @@ const CreatePage = () => {
                     <input type="text" placeholder="Car brand" name="brand" id="name_input" required />
                 </div>
                 <div class="email">
-                    <input type="email" placeholder="Car model" name="model" id="email_input" required />
+                    <input type="text" placeholder="Car model" name="model" id="email_input" required />
                 </div>
                 <div class="telephone">
                     <input type="text" placeholder="Car price" name="price" id="telephone_input" required />

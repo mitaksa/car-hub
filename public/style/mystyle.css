@@ -1740,12 +1740,12 @@ padding: 0;  */
     outline: none;
 }
 
-.login-block input#username {
+.login-block input#email {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input#username:focus {
+.login-block input#email:focus {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
@@ -1883,10 +1883,10 @@ h1 {
 	transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
+/* input[type='text']:focus, [type='email']:focus, textarea:focus {
 	outline: none;
 	padding: 0 0 0.875em 0;
-}
+} */
 
 .message {
 	float: none;
