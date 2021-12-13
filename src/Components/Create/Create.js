@@ -1,6 +1,6 @@
 
 
-const CreatePage = () => {
+const Create = () => {
 
     const onPostHandler = (e) => {
         e.preventDefault();
@@ -54,4 +54,4 @@ const CreatePage = () => {
     )
 }
 
-export default CreatePage;
+export default Create;

@@ -45,8 +45,8 @@ const Header = () => {
 							<Link to="/my-cars">My Cars</Link>
 
 						</li>
-						<button><Link to='/create-page' className="postnewcar">POST NEW CAR</Link></button>
-						<button><span className="logout">Logout</span></button>
+						<button><Link to='/create' className="postnewcar">POST NEW CAR</Link></button>
+						<button><Link to='/logout' className="logout">Logout</Link></button>
 					</ul>
 	);
 

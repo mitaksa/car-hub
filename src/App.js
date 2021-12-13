@@ -7,7 +7,9 @@ import MyCars from './Components/MyCars/MyCars.js';
 import Footer from './Components/Footer/Footer.js';
 import Login from './Components/Login/Login.js';
 import Register from './Components/Register/Register.js';
-import CreatePage from './Components/CreatePage/CreatePage.js';
+import Create from './Components/Create/Create.js';
+import Logout from './Components/Logout/Logout.js';
+
 import { AuthProvider } from './contexts/AuthContext.js';
 
 function App() {
@@ -20,8 +22,9 @@ function App() {
 					<Route path='/' element={<Main />} />
 					<Route path='/my-cars' element={<MyCars />} />
 					<Route path='/login' element={<Login />} />
+					<Route path="/logout" element={<Logout />} />
 					<Route path='/register' element={<Register />} />
-					<Route path='/create-page' element={<CreatePage />} />
+					<Route path='/create' element={<Create />} />
 				</Routes>
 
 
