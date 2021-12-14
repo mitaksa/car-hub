@@ -32,7 +32,6 @@ const Login = () => {
     return (
         <form onSubmit={onLoginHandler} method="POST">
             <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
-            <div class="logo"></div>
             <div class="login-block">
                 <h1>Login</h1>
                 <input type="text" defaultValue="" placeholder="Email" id="email" name="email" />
