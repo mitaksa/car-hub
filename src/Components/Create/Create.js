@@ -1,6 +1,10 @@
-
+import { useNavigate } from 'react-router';
+import * as carService from '../../services/carService.js'
+import { useAuthContext } from '../../contexts/AuthContext.js';
 
 const Create = () => {
+    const {user} = useAuthContext();
+    const navigate = useNavigate();
 
     const onPostHandler = (e) => {
         e.preventDefault();
@@ -12,7 +16,19 @@ const Create = () => {
         let price = formData.get('price');
         let imageUrl = formData.get('imageUrl');
         let category = formData.get('category');
-        console.log(formData);
+        let description = formData.get('description');
+        
+        carService.create({
+            brand,
+            model,
+            price,
+            imageUrl,
+            category,
+            description
+        }, user.accessToken)
+        .then(result => {
+            navigate('/');
+        })
     }
 
     return (

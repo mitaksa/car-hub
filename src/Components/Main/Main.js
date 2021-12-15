@@ -1,3 +1,4 @@
+import CarList from "../CarList/CarList.js";
 
 const Main = () => {
 	return (
@@ -102,6 +103,9 @@ const Main = () => {
 				{/* <!-- ________________________Latest Cars Image Thumbnail________________--> */}
 				<div className="grid">
 					<div className="row">
+						<CarList/>
+					</div>
+					{/* <div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 							<div className="txthover">
 								<img src="image/car1.jpg" alt="car1" />
@@ -326,7 +330,7 @@ const Main = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
