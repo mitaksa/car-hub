@@ -6,7 +6,7 @@ const CarCard = ({
     return (
         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div className="txthover">
-                <img src={car.imageUrl} alt="car4" />
+                <img className="carsphotos" src={car.imageUrl}/>
                 <div className="txtcontent">
                     <div className="stars">
                         <div className="glyphicon glyphicon-star"></div>

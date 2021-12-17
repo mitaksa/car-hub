@@ -857,7 +857,11 @@ font-weight: bold;
 	background: none;
 	color: #020243;
 } 
- 
+
+.carsphotos{
+	height: 270px;
+      width: 550px; 
+}
 
 .img2colon{
 	padding: 0px!important;

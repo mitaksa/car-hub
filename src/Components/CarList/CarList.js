@@ -21,7 +21,7 @@ const CarList = () => {
         {cars.length > 0
             ? (
                 <div className="row">
-                    {cars.map(x => <CarCard key={x.id} car={x} />)}
+                    {cars.map(x => <CarCard key={x._id} car={x} />)}
                 </div>
             )
             : <p className="no-pets">No cars in database!</p>
