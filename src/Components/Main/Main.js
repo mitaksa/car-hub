@@ -1,6 +1,21 @@
+import { useEffect, useState } from "react";
+import * as carService from '../../services/carService.js';
 import CarList from "../CarList/CarList.js";
 
 const Main = () => {
+    const [cars, setCars] = useState([]);
+
+	useEffect(() => {
+        carService.getAll()
+        .then(result => {
+            console.log(result);
+            setCars(result);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }, []);
+
 	return (
 		// <div className="allcontain"> 
 		<div>
@@ -103,7 +118,7 @@ const Main = () => {
 				{/* <!-- ________________________Latest Cars Image Thumbnail________________--> */}
 				<div className="grid">
 					<div className="row">
-						<CarList/>
+						<CarList cars={cars}/>
 					</div>
 					{/* <div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
