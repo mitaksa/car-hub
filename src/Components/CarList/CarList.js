@@ -12,7 +12,7 @@ const CarList = ({
                     {cars.map(x => <CarCard key={x._id} car={x} />)}
                 </div>
             )
-            : <p className="no-pets">No cars in database!</p>
+            : <h3 className="nocars">No cars in database!</h3>
         }
         </>
     );

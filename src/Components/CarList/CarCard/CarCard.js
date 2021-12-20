@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const CarCard = ({
     car
@@ -14,14 +14,14 @@ const CarCard = ({
                         <div className="glyphicon glyphicon-star"></div>
                     </div>
                     <div className="simpletxt">
-                        <h3 className="name">{car.brand}</h3>
-                        <p>{car.model}</p>
+                        <h3 className="name">{car.brand} {car.model}</h3>
+                        {/* <h3>{car.model}</h3> */}
                         <h4 className="price">{car.price} &euro;</h4>
-                        <button>READ MORE</button><br />
-                        <div className="wishtxt">
+                        <button><Link className="link" to={`/details/${car._id}`}>READ MORE</Link></button>
+                        {/* <div className="wishtxt">
                             <p className="paragraph1"> Add to Wishlist <span className="glyphicon glyphicon-heart"></span> </p>
                             <p className="paragraph2">Compare <span className="icon"><img src="image/compicon.png" alt="compicon" /></span></p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="stars2">
                         <div className="glyphicon glyphicon-star"></div>

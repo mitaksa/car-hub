@@ -171,7 +171,20 @@ padding-left: 5%;
   	background: none!important;
   	border-bottom: 2px solid #C59E47;
   }
- 
+  
+.logout {
+	color: inherit;
+    text-decoration: inherit;
+}
+
+.linknav{
+	color: black;
+}
+
+.linknav:hover{
+	color: black;
+	text-decoration: none;
+}
 
  #navbarontop>button{
  	background: none;
@@ -333,7 +346,22 @@ float: right;
   }
 }
 
+.nocars{
+	text-align: center;
+}
 
+.imgcr{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 250px;
+  height: 150px;
+}
+
+.useremail{
+	margin-left: 280px;
+	color: black;
+}
 
 /* ------------------------ End Navbar On Top -----------------*/
 /*------------------------- Start Carousel --------------------*/
@@ -860,7 +888,7 @@ font-weight: bold;
 
 .carsphotos{
 	height: 270px;
-      width: 550px; 
+      width: 570px; 
 }
 
 .img2colon{
@@ -908,6 +936,16 @@ font-weight: bold;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+.link{
+	color: white;
+}
+
+.link:hover{
+	color: white;
+	text-decoration: none;
+}
+
 #readmore>button:hover{
 	background: #020243;
 	color: #fff;
@@ -968,7 +1006,6 @@ margin-right:auto;
 margin-left: auto;
 
 }
- 
  
 .costumrow{
 	border-top: 0px solid #BABABA;
@@ -2007,4 +2044,88 @@ textarea {
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
   }
+}
+
+/* <---------DETAILS--------> */
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.about .about-img img {
+    width: 100%;
+    border-radius: 5px;
+    /* margin-bottom: 30px; */
+}
+
+.about .about-content {
+    margin-bottom: 30px;
+}
+
+.about .about-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: -125px;
+}
+
+.about .about-content ul li {
+	font-size: 20px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+
+.about .about-content ul li i {
+	font-size: 20px;
+	margin-right: 8px;
+    color: #fe9402;
+}
+
+.about .about-content p {
+	font-size: 17px;
+	margin-left: 25px;
+	text-align: center;
+}
+
+.starsdetails{
+	font-size: 7px;
+	padding-top: 57px;
+	padding-bottom: 12px;
+	text-align: center;
+	border-bottom: 2px solid #fe9402;
+	margin-left:58px;
+	margin-right: 58px;
+	color: #fe9402;
+}
+
+.stars2details{
+	font-size: 7px;
+	padding-top: 10px;
+	margin-top: 2px;
+	text-align: center;
+	border-top: 2px solid #fe9402;
+	margin-left:58px;
+	margin-right: 58px;
+	color: #fe9402;
+}
+.btn.btn-custom {
+    color: #474544;
+    background: #fe9402;
+    box-shadow: inset 0 0 0 0 #202C45;
+	float:left;
+   margin-right:50px;
+
+}
+
+.btn.btn-custom:hover {
+    color: #fe9402;
+    background: #fe9402;
+    box-shadow: inset 200px 0 0 0 white;
 }

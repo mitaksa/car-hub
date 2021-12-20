@@ -9,8 +9,8 @@ import Login from './Components/Login/Login.js';
 import Register from './Components/Register/Register.js';
 import Create from './Components/Create/Create.js';
 import Logout from './Components/Logout/Logout.js';
-
 import { AuthProvider } from './contexts/AuthContext.js';
+import Details from './Components/Details/Details.js';
 
 function App() {
 	return (
@@ -25,6 +25,7 @@ function App() {
 					<Route path="/logout" element={<Logout />} />
 					<Route path='/register' element={<Register />} />
 					<Route path='/create' element={<Create />} />
+					<Route path='/details/:carId' element={<Details />} />
 				</Routes>
 
 
