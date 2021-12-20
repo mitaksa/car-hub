@@ -11,8 +11,8 @@ const Details = () => {
 
     const ownerButtons = (
         <>
-            <Link className="button" to={`/edit/${car._id}`}>Edit</Link>
-            <a className="button" >Delete</a>
+            <button className="btn btn-custom" > <Link className="editlink" to={`/edit/${car._id}`}>Edit</Link></button>
+            <a className="btn btn-custom" >Delete</a>
         </>
     );
 
@@ -23,10 +23,10 @@ const Details = () => {
 
         <div className="about">
             <div className="starsdetails">
-                        <div className="glyphicon glyphicon-star"></div>
-                        <div className="glyphicon glyphicon-star"></div>
-                        <div className="glyphicon glyphicon-star"></div>
-                    </div>
+                <div className="glyphicon glyphicon-star"></div>
+                <div className="glyphicon glyphicon-star"></div>
+                <div className="glyphicon glyphicon-star"></div>
+            </div>
             <h1>{car.brand} {car.model}</h1>
             <div className="container">
                 <div className="row align-items-center">
@@ -50,15 +50,23 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-            <a className="btn btn-custom" href="">Edit</a>
-            <a className="btn btn-custom" href="">Delete</a>
-            <a className="btn btn-custom" href="">Like</a>
+                <div>
+                    {user._id && (user._id == car._ownerId
+                        ? ownerButtons
+                        : userButtons
+                    )}
+
+                    <img className="hearts" src="/image/heart.png" />
+                    <div className="likes">
+                        <span id="total-likes">Likes:</span>
+                    </div>
+                </div>
             </div>
             <div className="stars2details">
-                        <div className="glyphicon glyphicon-star"></div>
-                        <div className="glyphicon glyphicon-star"></div>
-                        <div className="glyphicon glyphicon-star"></div>
-                    </div>
+                <div className="glyphicon glyphicon-star"></div>
+                <div className="glyphicon glyphicon-star"></div>
+                <div className="glyphicon glyphicon-star"></div>
+            </div>
         </div>
     )
 

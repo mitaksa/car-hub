@@ -942,7 +942,7 @@ font-weight: bold;
 }
 
 .link:hover{
-	color: white;
+	color: #fe9402;
 	text-decoration: none;
 }
 
@@ -2129,3 +2129,26 @@ textarea {
     background: #fe9402;
     box-shadow: inset 200px 0 0 0 white;
 }
+
+.editlink{
+	color: #474544;
+}
+
+.editlink:hover{
+	color: #fe9402;
+	text-decoration: none;
+}
+
+.likes {
+	display: flex;
+    flex-direction: column;
+}
+
+img.hearts {
+    width: 33px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+

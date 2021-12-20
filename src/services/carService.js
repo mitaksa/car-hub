@@ -1,13 +1,13 @@
-import { request } from "./requester.js";
+import * as request from "./requester.js";
 
 const baseUrl = 'http://localhost:3030/data'
 
-export const getAll = () => request(`${baseUrl}/cars`);
+export const getAll = () => request.get(`${baseUrl}/cars`);
 
 export const getMyCars = (ownerId) => {
     let query = encodeURIComponent(`_ownerId="${ownerId}"`);
 
-    return request(`${baseUrl}/cars?where=${query}`);
+    return request.get(`${baseUrl}/cars?where=${query}`);
 }
 
 
@@ -30,3 +30,5 @@ export const getOne = (carId) => {
     return fetch(`${baseUrl}/cars/${carId}`)
         .then(res => res.json())
 };
+
+export const update = (carId, carData) => request.put(`${baseUrl}/cars/${carId}`, carData);
