@@ -13,9 +13,9 @@ const Header = () => {
 			<li className="dropdown">
 				<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
 				<ul className="dropdown-menu dropdowncostume">
-					<li><a href="#">Sport</a></li>
-					<li><a href="#">Old</a></li>
-					<li><a href="#">New</a></li>
+					<li><Link to="categories/Sport">Sport</Link></li>
+					<li><Link to="categories/Old">Old</Link></li>
+					<li><Link to="categories/New">New</Link></li>
 				</ul>
 			</li>
 
@@ -33,9 +33,9 @@ const Header = () => {
 			<li className="dropdown">
 				<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
 				<ul className="dropdown-menu dropdowncostume">
-					<li><a href="#">Sport</a></li>
-					<li><a href="#">Old</a></li>
-					<li><a href="#">New</a></li>
+					<li><Link to="categories/Sport">Sport</Link></li>
+					<li><Link to="categories/Old">Old</Link></li>
+					<li><Link to="categories/New">New</Link></li>
 				</ul>
 			</li>
 
@@ -45,8 +45,8 @@ const Header = () => {
 				<Link to="/my-cars">My Cars</Link>
 
 			</li>
-			<button><Link className="linknav" to='/create'>POST NEW CAR</Link></button>
-			<button><Link className="linknav" to='/logout'>Logout</Link></button>
+			<Link className="linknav" to='/create'>POST NEW CAR</Link>
+			<Link className="linknav" to='/logout'>Logout</Link>
 			<label className="useremail">Hi, {user.email}</label>
 		</ul>
 	);

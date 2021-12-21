@@ -35,22 +35,22 @@ const Create = () => {
 
         <div id="container">
             <h1>&bull; Create car post &bull;</h1>
-            <div class="underline">
+            <div className="underline">
             </div>
             <form onSubmit={onPostHandler} method="POST" id="contact_form">
-                <div class="name">
+                <div className="name">
                     <input type="text" placeholder="Car brand" name="brand" id="name_input" required />
                 </div>
-                <div class="email">
+                <div className="email">
                     <input type="text" placeholder="Car model" name="model" id="email_input" required />
                 </div>
-                <div class="email">
+                <div className="email">
                     <input type="text" placeholder="Car price $" name="price" id="email_input" required />
                 </div>
-                <div class="telephone">
+                <div className="telephone">
                     <input type="text" placeholder="Car image url" name="imageUrl" id="telephone_input" required />
                 </div>
-                <div class="subject">
+                <div className="subject">
                     <select placeholder="Car category" name="category" id="subject_input" required>
                         <option disabled hidden selected>Car category</option>
                         <option>Sport</option>
@@ -58,10 +58,10 @@ const Create = () => {
                         <option>New</option>
                     </select>
                 </div>
-                <div class="message">
+                <div className="message">
                     <textarea name="description" placeholder="Car description" id="message_input" cols="30" rows="5" required></textarea>
                 </div>
-                <div class="submit">
+                <div className="submit">
                     <input type="submit" value="Post" id="form_button" />
                 </div>
             </form>

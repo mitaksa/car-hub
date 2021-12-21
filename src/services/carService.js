@@ -32,3 +32,21 @@ export const getOne = (carId) => {
 };
 
 export const update = (carId, carData) => request.put(`${baseUrl}/cars/${carId}`, carData);
+
+export const destroy = (carId, token) => {
+    return fetch(`${baseUrl}/cars/${carId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': token
+        }
+    }).then(res => res.json());
+};
+
+export const like = (userId, carId) => request.post(`${baseUrl}/likes`, {userId, carId});
+
+export const getCarLikes = (carId) => {
+    const query = encodeURIComponent(`carId="${carId}"`);
+
+    return request.get(`${baseUrl}/likes?select=userId&where=${query}`)
+        .then(res => res.map(x => x.userId));
+};

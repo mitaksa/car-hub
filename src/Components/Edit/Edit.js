@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import useCarState from "../../hooks/useCarState.js";
 import * as carService from "../../services/carService.js"
 
+
 const categories = [
     { value: 'Sport', text: 'Sport' },
     { value: 'Old', text: 'Old' },

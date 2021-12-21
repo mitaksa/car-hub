@@ -12,6 +12,8 @@ import Logout from './Components/Logout/Logout.js';
 import { AuthProvider } from './contexts/AuthContext.js';
 import Details from './Components/Details/Details.js';
 import Edit from './Components/Edit/Edit.js';
+import Categories from './Components/Categories/Categories.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	return (
@@ -28,6 +30,7 @@ function App() {
 					<Route path='/create' element={<Create />} />
 					<Route path='/details/:carId' element={<Details />} />
 					<Route path="/edit/:carId" element={<Edit />} />
+					<Route path="/categories/:category" element={<Categories />} />
 				</Routes>
 
 
