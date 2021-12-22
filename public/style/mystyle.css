@@ -1814,6 +1814,16 @@ padding: 0;  */
     background-size: 16px 80px;
 }
 
+.login-block input#repeat-pass {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#repeat-pass:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
 .login-block input:active, .login-block input:focus {
     border: 1px solid #ff656c;
 }
@@ -2172,5 +2182,6 @@ img.hearts {
     position: relative;
     display: inline-block;
 }
+
 
 

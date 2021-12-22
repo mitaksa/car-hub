@@ -11,7 +11,7 @@ const Header = () => {
 			</li>
 
 			<li className="dropdown">
-				<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
+				<a  className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
 				<ul className="dropdown-menu dropdowncostume">
 					<li><Link to="categories/Sport">Sport</Link></li>
 					<li><Link to="categories/Old">Old</Link></li>
@@ -31,7 +31,7 @@ const Header = () => {
 			</li>
 
 			<li className="dropdown">
-				<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
+				<a  className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span className="caret"></span></a>
 				<ul className="dropdown-menu dropdowncostume">
 					<li><Link to="categories/Sport">Sport</Link></li>
 					<li><Link to="categories/Old">Old</Link></li>

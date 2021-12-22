@@ -12,8 +12,6 @@ const Categories = () => {
 		carService.getAll()
 			.then(result => {
 				result = result.filter(x => x.category === category)
-				console.log(category);
-				console.log(result);
 				setCars(result);
 			})
 			.catch(err => {

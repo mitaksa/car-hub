@@ -6,8 +6,7 @@ const Footer = () => {
         <div className="bottommenu">
 				{/* <img src="image/collectionlogo1.png" alt="logo1" /> */}
             
-            <p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br />
-						eiusmod tempor incididunt </p>
+            <p>...Subscribe us...</p>
 					<div className="bottomsocial">
 						<a href="https://www.facebook.com/"><i className="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/i/flow/login"><i className="fa fa-twitter"></i></a>
@@ -16,7 +15,7 @@ const Footer = () => {
 					</div>
             <div className="footer">
                 <div className="copyright">
-                    &copy; Copy right 2016 | <a href="https://">Privacy </a>| <a href="https://">Policy</a>
+                    &copy; Car Hub 2021 | <a href="https://">Privacy </a>| <a href="https://">Policy</a>
                 </div>
                 <div className="atisda">
                     Designed by <a href="http://www.webdomus.net/">Web Domus Italia - Web Agency </a>

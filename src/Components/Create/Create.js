@@ -52,7 +52,7 @@ const Create = () => {
                 </div>
                 <div className="subject">
                     <select placeholder="Car category" name="category" id="subject_input" required>
-                        <option disabled hidden selected>Car category</option>
+                        <option disabled hidden selected >Car category</option>
                         <option>Sport</option>
                         <option>Old</option>
                         <option>New</option>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useParams } from "react-router";
 import { useNavigate } from 'react-router-dom';
 import useCarState from "../../hooks/useCarState.js";
@@ -15,7 +14,6 @@ const categories = [
 const Edit = () => {
 
     const { carId } = useParams();
-    const [errors, setErrors] = useState({ brand: false, model: false });
     const [car, setCar] = useCarState(carId);
     const navigate = useNavigate();
 

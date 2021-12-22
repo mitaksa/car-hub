@@ -23,7 +23,6 @@ const Login = () => {
                 navigate('/');
             })
             .catch(err => {
-                // TODO: show notification
                 console.log(err);
             });
 
@@ -32,12 +31,13 @@ const Login = () => {
     return (
         <form onSubmit={onLoginHandler} method="POST">
             <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
-            <div class="login-block">
+            <div className="login-block">
                 <h1>Login</h1>
-                <input type="text" defaultValue="" placeholder="Email" id="email" name="email" />
-                <input type="password" defaultValue="" placeholder="Password" id="password" name="password" />
+                <input type="text" defaultValue="" placeholder="Email" id="email" name="email" required/>
+                <input type="password" defaultValue="" placeholder="Password" id="password" name="password" required/>
                 <button>Login</button>
             </div>
+            
         </form>
     )
 }

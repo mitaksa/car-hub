@@ -3,8 +3,7 @@ import { useAuthContext } from "../../contexts/AuthContext.js";
 import useCarState from "../../hooks/useCarState.js";
 import { Link } from "react-router-dom";
 import * as carService from "../../services/carService.js"
-import ConfirmDialog from "../Common/ConfirmDialog/ConfirmDialog.js";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 
 
@@ -12,7 +11,6 @@ const Details = () => {
     const { user } = useAuthContext();
     const { carId } = useParams();
     const [car, setCar] = useCarState(carId);
-    const [showDeleteDialog, setShowDeleteDialog] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -40,33 +38,24 @@ const Details = () => {
             })
     };
 
-    // const deleteClickHandler = (e) => {
-    //     e.preventDefault();
-    //     console.log(process.env.NODE_ENV);
-    //     setShowDeleteDialog(true);
-    // }
-
     const likeButtonClick = () => {
         if (user._id === car._ownerId) {
             return;
         }
 
         if (car.likes.includes(user._id)) {  
-            // addNotification('You cannot like again')
             return;
         }
 
         carService.like(user._id, carId)
             .then(() => {
                 setCar(state => ({...state, likes: [...state.likes, user._id]}));
-
-                // addNotification('Successfuly liked a cat :)', types.success);
             });
     };
 
     return (
-
-            <div className="about">
+        
+        <div className="about">
                 <div className="starsdetails">
                     <div className="glyphicon glyphicon-star"></div>
                     <div className="glyphicon glyphicon-star"></div>

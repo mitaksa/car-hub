@@ -8,7 +8,6 @@ const Main = () => {
 	useEffect(() => {
         carService.getAll()
         .then(result => {
-            console.log(result);
             setCars(result);
         })
         .catch(err => {
@@ -24,25 +23,16 @@ const Main = () => {
 					<div className="item active">
 						<img src="image/oldcar.jpg" alt="oldcar" />
 						<div className="carousel-caption">
-							<h2>Porsche 356</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur ,<br />
-								sed do eiusmod tempor incididunt ut labore </p>
 						</div>
 					</div>
 					<div className="item">
 						<img src="image/porche.jpg" alt="porche" />
 						<div className="carousel-caption">
-							<h2>Porche</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur ,<br />
-								sed do eiusmod tempor incididunt ut labore </p>
 						</div>
 					</div>
 					<div className="item">
 						<img src="image/benz.jpg" alt="benz" />
 						<div className="carousel-caption">
-							<h2>Car</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur ,<br />
-								sed do eiusmod tempor incididunt ut labore </p>
 						</div>
 					</div>
 				</div>
@@ -102,8 +92,8 @@ const Main = () => {
                 </nav> */}
 
 				<div className="latestcars">
-					<h1 className="text-center">&bullet; LATEST   CARS &bullet;</h1>
-					<ul className="nav nav-tabs navbar-left latest-navleft">
+					<h1 className="text-center">~ LATEST   CARS ~</h1>
+					{/* <ul className="nav nav-tabs navbar-left latest-navleft">
 						<li role="presentation" className="li-sortby"><span className="sortby">SORT BY: </span></li>
 						<li data-filter=".RECENT" role="presentation"><a href="#mostrecent" className="prcBtnR">MOST RECENT </a></li>
 						<li data-filter=".POPULAR" role="presentation"><a href="#mostpopular" className="prcBtnR">MOST POPULAR </a></li>
@@ -111,7 +101,7 @@ const Main = () => {
 						<li data-filter=".HPRICE" role="presentation"><a href="#" className="prcBtnH">HIGHEST PRICE </a></li>
 						<li data-filter=".LPRICE" role="presentation"><a href="#" className="prcBtnL">LOWEST  PRICE </a></li>
 						<li id="hideonmobile" />
-					</ul>
+					</ul> */}
 				</div>
 				<br />
 				<br />
@@ -127,15 +117,15 @@ const Main = () => {
 			<div className="newslettercontent">
 				<div className="leftside">
 					<img src="image/border.png" alt="border" />
-					<h1>NEWSLETTER</h1>
-					<p>Subscribe to the COLLECTIONCARS mailing list to <br />
-						receive updates on new arrivals, special offers <br />
-						and other discount information.</p>
+					<h1>Contact Us</h1>
+					<p>EMAIL: 
+						carhub123@gmail.com
+					</p>
 				</div>
 				<div className="rightside">
 					<img className="newsimage" src="image/newsletter.jpg" alt="newsletter" />
-					<input type="text" className="form-control" id="subemail" placeholder="EMAIL" />
-					<button>SUBSCRIBE</button>
+					{/* <input type="text" className="form-control" id="subemail" placeholder="EMAIL" /> */}
+					{/* <button>SUBSCRIBE</button> */}
 				</div>
 			</div>
 			{/* <div className="bottomlogo">
